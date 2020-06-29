@@ -3,6 +3,7 @@ import dash_html_components as html
 import dash_core_components as dcc
 import pandas as pd
 import matplotlib.pyplot as plt
+matplotlib.use('Agg')
 from matplotlib.pyplot import *
 from textblob import TextBlob
 import nltk

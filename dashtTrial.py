@@ -4,10 +4,10 @@ import dash_core_components as dcc
 import pandas as pd
 from textblob import TextBlob
 import nltk
-from nltk.corpus import stopwords
-nltk.download('stopwords')
-nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+nltk.download('vader_lexicon')
 import re
 from textblob import Word
 import plotly.graph_objects as go

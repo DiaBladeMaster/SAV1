@@ -3,7 +3,6 @@ import dash_html_components as html
 import dash_core_components as dcc
 import pandas as pd
 import matplotlib.pyplot as plt
-matplotlib.use('Agg')
 from matplotlib.pyplot import *
 from textblob import TextBlob
 import nltk
@@ -16,7 +15,7 @@ from textblob import Word
 import plotly.graph_objects as go
 from textblob.classifiers import NaiveBayesClassifier
 import plotly.express as px
-
+plt.use('Agg')
 #---------------------------------------------------------------------------------------------
 
 sid = SentimentIntensityAnalyzer()

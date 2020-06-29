@@ -8,6 +8,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 nltk.download('vader_lexicon')
+nltk.download('punkt')
 import re
 from textblob import Word
 import plotly.graph_objects as go

@@ -249,6 +249,10 @@ def update_output(n_clicks, value):
          ("what an awesome view", 'pos'),
          ('this is an amazing place!', 'pos'),
          ('I feel very good about these beers.', 'pos'),
+         ("I feel amazing!", 'pos'),
+         ('Gary is a friend of mine.', 'pos'),
+          ('the beer was good.', 'pos'),
+         ('the food was great.', 'pos'),
          ('this is my best work.', 'pos'),
          ("what an awesome view", 'pos'),
          ('I do not like this restaurant', 'neg'),
@@ -260,19 +264,13 @@ def update_output(n_clicks, value):
          ('I am tired of this stuff.', 'neg'),
          ("I can't deal with all this tension", 'neg'),
          ('he is my sworn enemy!', 'neg'),
-         ('my friends is horrible.', 'neg')
-     ]
-    test = [
-         ('the beer was good.', 'pos'),
+         ('my friends is horrible.', 'neg'),
          ('I do not enjoy my job', 'neg'),
          ("I ain't feeling dandy today.", 'neg'),
-         ("I feel amazing!", 'pos'),
-         ('Gary is a friend of mine.', 'pos'),
          ("I can't believe I'm doing this.", 'neg'),
-         ('the food was great.', 'pos'),
          ('I do not want to live anymore', 'neg'),
-     
      ]
+   
     classifier = NaiveBayesClassifier(train)
     sen = []
     for sentence in diary.sentences:

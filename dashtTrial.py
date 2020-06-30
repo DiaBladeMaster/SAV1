@@ -242,6 +242,11 @@ def update_output(n_clicks, value):
     diary = TextBlob(diary)
     train = [
          ('I love this sandwich.', 'pos'),
+         ('What an amazing weather.', 'pos'),
+         ('this is an amazing idea!', 'pos'),
+         ('I feel very good about these ideas.', 'pos'),
+         ('this is my best performance.', 'pos'),
+         ("what an awesome view", 'pos'),
          ('this is an amazing place!', 'pos'),
          ('I feel very good about these beers.', 'pos'),
          ('this is my best work.', 'pos'),
@@ -251,6 +256,11 @@ def update_output(n_clicks, value):
          ("I can't deal with this", 'neg'),
          ('he is my sworn enemy!', 'neg'),
          ('my boss is horrible.', 'neg'),
+         ('I do not like this place', 'neg'),
+         ('I am tired of this stuff.', 'neg'),
+         ("I can't deal with all this tension", 'neg'),
+         ('he is my sworn enemy!', 'neg'),
+         ('my friends is horrible.', 'neg')
      ]
     test = [
          ('the beer was good.', 'pos'),
@@ -258,7 +268,10 @@ def update_output(n_clicks, value):
          ("I ain't feeling dandy today.", 'neg'),
          ("I feel amazing!", 'pos'),
          ('Gary is a friend of mine.', 'pos'),
-         ("I can't believe I'm doing this.", 'neg')
+         ("I can't believe I'm doing this.", 'neg'),
+         ('the food was great.', 'pos'),
+         ('I do not want to live anymore', 'neg'),
+     
      ]
     classifier = NaiveBayesClassifier(train)
     sen = []
